@@ -1,5 +1,3 @@
-15/11/2026
-----------
 Cursillo de docker que hice al instalar Kiri
 
 Antes de levantar KiriCompose hay que crear el fichero de variables de entorno
