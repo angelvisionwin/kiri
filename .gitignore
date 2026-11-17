@@ -1,0 +1,15 @@
+# Variables de entorno con credenciales
+.env
+KiriCompose/.env
+
+# Copias de seguridad de la base de datos
+*.dump
+KiriCompose/backups/
+
+# Salida generada por mkdocs build
+manual/site/
+
+# Basura del sistema
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,51 @@
+site_name: Manual práctico de Docker y Kiri
+site_description: Apuntes del curso práctico de Docker Compose realizado con Kiri en Windows 11
+site_author: Angel
+site_url: ""
+repo_name: ""
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Fundamentos:
+      - Imágenes y contenedores: fundamentos/imagenes-contenedores.md
+      - Volúmenes y persistencia: fundamentos/volumenes.md
+      - Bind mounts: fundamentos/bind-mounts.md
+      - Redes: fundamentos/redes.md
+  - Construcción y Compose:
+      - Dockerfile e imágenes propias: compose/dockerfile.md
+      - Docker Compose multicontenedor: compose/multicontenedor.md
+      - Actualización y persistencia: compose/actualizacion-persistencia.md
+      - Variables de entorno: compose/variables-entorno.md
+      - Redes frontend y backend: compose/redes-separadas.md
+      - Healthchecks: compose/healthchecks.md
+  - Operación:
+      - Logs y diagnóstico: operacion/logs-diagnostico.md
+      - Administración diaria: operacion/administracion.md
+      - Copias de seguridad PostgreSQL: operacion/backups-postgresql.md
+  - Referencia:
+      - Chuleta de comandos: referencia/comandos.md
+      - Próximos pasos: referencia/proximos-pasos.md
